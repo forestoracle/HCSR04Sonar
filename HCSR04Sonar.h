@@ -1,5 +1,5 @@
 /*
-  Управление ультразвуковым модулем измерения растояния HCSR04 
+  Manage ultrasound module HCSR04 
 */
 #ifndef HCSR04Sonar_h
 #define HCSR04Sonar_h
@@ -8,11 +8,11 @@
 
 class HCSR04Sonar {
 	private:
-	uint8_t echoPin;
-	uint8_t trigPin;
+	uint8_t echoPin;  // Echo pin
+	uint8_t trigPin;  // Trigger pin
 	void init(void);
 	public:
-	// Конструктор
+	// Constructor
 	HCSR04Sonar(uint8_t echo, uint8_t trig);
 	
 };
